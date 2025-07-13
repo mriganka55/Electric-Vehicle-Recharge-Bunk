@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "electric-vehicle-recharge-bunk"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "electric-vehicle-recharge-bunk-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
